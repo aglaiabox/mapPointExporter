@@ -16,7 +16,8 @@ import java.util.Collections;
 
 public class HelloSelenium {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
+
+        System.setProperty("webdriver.chrome.driver", args[0]);
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
